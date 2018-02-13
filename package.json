@@ -4,12 +4,13 @@
   "description": "tp npm",
   "main": "index.js",
   "scripts": {
-    "qualitycheck":"echo \"Running Quality Check...\" && npm run postqc",
-    "pretest": "echo \"Running npm pre test...\" && npm run test",
-    "test": "echo \"Running npm test...\" && npm run posttest",
-    "preqc":"echo \"Running npm pre Quality Check...\" && npm run qualitycheck",
-    "postqc":"echo \"Running npm post Quality Check...\" && npm run pretest",
-    "posttest":"echo \"Running npm post test...\" && exit 1"
+    "start": "npm run qualitycheck",
+    "prequalitycheck": "echo \"Running npm pre Quality Check...\"",
+    "qualitycheck": "echo \"Running Quality Check...\"",
+    "postqualitycheck": "echo \"Running npm post Quality Check...\" && npm run test",
+    "pretest": "echo \"Running npm pre test...\"",
+    "test": "echo \"Running npm test...\"",
+    "posttest": "echo \"Running npm post test...\""
   },
   "author": "Amadou Fatty",
   "license": "ISC"
