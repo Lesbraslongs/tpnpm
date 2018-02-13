@@ -1,0 +1,16 @@
+{
+  "name": "tpnpm",
+  "version": "1.0.0",
+  "description": "tp npm",
+  "main": "index.js",
+  "scripts": {
+    "qualitycheck":"echo \"Running Quality Check...\" && npm run postqc",
+    "pretest": "echo \"Running npm pre test...\" && npm run test",
+    "test": "echo \"Running npm test...\" && npm run posttest",
+    "preqc":"echo \"Running npm pre Quality Check...\" && npm run qualitycheck",
+    "postqc":"echo \"Running npm post Quality Check...\" && npm run pretest",
+    "posttest":"echo \"Running npm post test...\" && exit 1"
+  },
+  "author": "Amadou Fatty",
+  "license": "ISC"
+}
